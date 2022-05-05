@@ -9,7 +9,7 @@
 
 <style lang="scss">
 
-@use "@/assets/scss/style.scss";
+@import "@/assets/scss/style.scss";
 
 </style>
 
