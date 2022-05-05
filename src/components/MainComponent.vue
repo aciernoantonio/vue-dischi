@@ -26,7 +26,7 @@
 </template>
 
 <style lang="scss" scoped>
-@use "@/assets/scss/style.scss";
+/* @use "@/assets/scss/style.scss"; */
 
 main{
     img{
@@ -39,7 +39,7 @@ main{
     }
 
     .card{
-        background-color: #2e3a46;
+        background-color: $albumBgColor;
     }
 
     .card-text{
