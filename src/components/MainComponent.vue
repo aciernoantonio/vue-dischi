@@ -60,8 +60,8 @@ export default {
     data() {
         return {
             link: "https://flynn.boolean.careers/exercises/api/array/music ",
-            disks: null,
-            disk: null,
+            disks: [],
+            // disk: null,
         }
     },
 
@@ -70,14 +70,16 @@ export default {
         .get(this.link)
         .then(response => {
             this.disks = response.data.response;
-            console.log(this.disk);
+            // console.log(this.disk);
         })
     },
 
     computed: {
         filterGenre(){
                 return this.disks.filter(disk => {
-                return disk.genre.toLoweCase().includes(state.valueSelect.toLowerCase())
+                    console.log(disk.genre);
+                    console.log(state.valueSelect)
+                    return disk.genre.toLowerCase().includes(state.valueSelect.toLowerCase())
             })
         }
     }
