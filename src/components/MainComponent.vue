@@ -61,6 +61,7 @@ export default {
         return {
             link: "https://flynn.boolean.careers/exercises/api/array/music ",
             disks: null,
+            disk: null,
         }
     },
 
@@ -75,7 +76,7 @@ export default {
 
     computed: {
         filterGenre(){
-            return this.disks.filter(disk => {
+                return this.disks.filter(disk => {
                 return disk.genre.toLoweCase().includes(state.valueSelect.toLowerCase())
             })
         }

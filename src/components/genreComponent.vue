@@ -2,11 +2,10 @@
 
     <div class="col">
         <select 
-        class="form-select w-25 " 
+        class="form-select w-25" 
         aria-label="Default select example"
         @change="$emit('genreSelected')"
-        @input="$emit('input', $event.target.value)"
-        >
+        @input="$emit('input', $event.target.value)">
             <option selected value="">Select Genre</option>
             <option value="rock">Rock</option>
             <option value="pop">Pop</option>
